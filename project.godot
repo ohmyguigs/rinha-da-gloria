@@ -19,7 +19,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Godot 2D Top-Down Template"
-config/version="1.9.1"
+config/version="0.0.1"
 config/tags=PackedStringArray("template")
 run/main_scene="res://scenes/menus/start_screen.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
@@ -47,11 +47,12 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/tile_bit_tools/plugin.cfg")
+enabled=PackedStringArray("res://addons/coi_serviceworker/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/tile_bit_tools/plugin.cfg")
 
 [filesystem]
 
-import/blender/enabled=false
+import/fbx2gltf/enabled.web=true
+import/blender/enabled.web=true
 
 [global_group]
 
