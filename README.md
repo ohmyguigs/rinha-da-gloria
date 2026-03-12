@@ -1,3 +1,4 @@
+Por enquanto esse repositório é apenas um clone desse template: [godot-2d-topdown-template](https://github.com/stesproject/godot-2d-topdown-template)
 # Godot 2D Top-Down Template
 
 <img src="https://alchemy-pot.web.app/res/2d-topdown-template-godot4.png" width="100%">
