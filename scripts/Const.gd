@@ -13,6 +13,14 @@ const GUILDS: Array = [
 	"yellow"
 ]
 
+const CLASSES: Array = [
+	"warrior",
+	"lancer",
+	"archer",
+	"monk",
+	"pawn"
+]
+
 const SAVE_FILE_BASE_PATH := "user://save"
 
 const PATH = {
