@@ -12,7 +12,10 @@ func _ready() -> void:
 func _instantiate_player():
 	var player: PlayerEntity = player_scene.instantiate() as PlayerEntity
 	if player:
-		player.player_id = player_id
+		var player_instance_id = player_id
+		if OS.has_feature("web"):
+			player_instance_id = JavaScriptBridge.eval("getFingerprint();")
+		player.player_id = player_instance_id
 		player.global_position = global_position
 		parent.add_child.call_deferred(player)
 		Globals.player_added_to_scene.emit(player)
