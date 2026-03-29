@@ -19,6 +19,7 @@ func _ready() -> void:
 		var window = JavaScriptBridge.get_interface("window")
 		# 3. Trigger the JS function we added in the Head Include
 		#window.getBrowserFingerprint(_callback_reference)
+		print("[player instantiator] js bridge fpid: %s" % window.fpid)
 		if typeof(window.fpid) == TYPE_STRING:
 			self._on_fingerprint_received([window.fpid])
 	else:
