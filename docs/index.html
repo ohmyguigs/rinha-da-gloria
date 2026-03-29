@@ -6,13 +6,13 @@
     </head>
     <body>
         <script>
-            if (!window.SharedArrayBuffer) {
-                document.getElementById('status').style.display = 'none';
-                setTimeout(() => document.getElementById('status').style.display = '', 1500);
-            }
-        </script>
-        <script src="coi-serviceworker.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/fingerprintjs2/latest/fingerprint2.min.js"></script>
+if (!window.SharedArrayBuffer) {
+	document.getElementById('status').style.display = 'none';
+	setTimeout(() => document.getElementById('status').style.display = '', 1500);
+}
+</script>
+<script src="coi-serviceworker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/fingerprintjs2/latest/fingerprint2.min.js"></script>
         <script>
             const getBrowserFingerprint = async (godotCallback) => {
                 const fp = new Fingerprint2();
@@ -29,7 +29,7 @@
         <canvas id="canvas"></canvas>
         <script src="index.js"></script>
         <script>
-            var engine = new Engine({"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":9370896,"index.wasm":35739700},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4});
+            var engine = new Engine({"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":9371024,"index.wasm":35739700},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4});
             engine.startGame();
         </script>
     </body>
